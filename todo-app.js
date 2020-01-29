@@ -18,6 +18,15 @@ const todos = [{
 }]
 console.log(' --- todos ---\n', JSON.stringify(todos))
 
+// listen for todo text change - input add to do
+document.querySelector('input#new-todo-text').addEventListener('input', function(e) {
+    console.log(e.target.value)
+})
+
+
+
+
+
 // how many todos do i have?
 const incompleteTodos = todos.filter(function (todo) {
     return !todo.completed
